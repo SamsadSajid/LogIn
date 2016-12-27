@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Hi There</string>
+    <string name="prompt_email">Email</string>
+</resources>

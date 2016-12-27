@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context="com.example.dolphin.login.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textColor="@color/textcolor"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:textStyle="bold"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/prompt_email"
+        android:textColor="@color/textcolor"
+        android:textSize="18dp"
+        android:id="@+id/tEmail"
+        android:layout_alignParentLeft="true"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tEmail"
+        android:textColor="@color/textcolor"
+        android:id="@+id/eEmail"
+        android:inputType="textEmailAddress"
+        />
+
+    <TextView
+        android:text="Password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textcolor"
+        android:textSize="18dp"
+        android:id="@+id/tPassword"
+        android:layout_alignParentLeft="true"
+        android:textStyle="bold"
+        android:layout_below="@id/eEmail" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:layout_below="@id/tPassword"
+        android:textColor="@color/textcolor"
+        android:id="@+id/ePassword" />
+
+    <Button
+        android:text="Sign In"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bSignIn"
+        android:layout_below="@id/ePassword"
+        android:textStyle="bold"
+        android:layout_marginTop="35dp"
+        style="?android:textAppearanceSmall"
+        android:background="@drawable/button_selector"
+        android:textColor="@color/textcolor"
+        android:gravity="center"
+        android:textSize="20dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp">
+
+
+        <TextView
+            android:text="New User? Sign Up"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tSignUpPrompt"
+            android:textColor="@color/textcolor"
+            android:textSize="18dp"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            />
+    </RelativeLayout>
+
+</LinearLayout>
+
