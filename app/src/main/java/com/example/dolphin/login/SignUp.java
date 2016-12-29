@@ -65,6 +65,11 @@ public class SignUp extends AppCompatActivity {
                     AlertDialog alertDialog=builder.create();
                     alertDialog.show();
                 }
+
+                else{
+                    BackGroundTask backGroundTask = new BackGroundTask(SignUp.this);
+                    backGroundTask.execute("registration",ename.getText().toString(),eemail.getText().toString(),epass.getText().toString());
+                }
             }
         });
     }
